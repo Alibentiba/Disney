@@ -1,4 +1,4 @@
-li {color: aliceblue;
+li {
     list-style: none;
     font-weight: 600;
     text-transform: capitalize;
@@ -11,7 +11,7 @@ li {color: aliceblue;
     text-decoration: none;
     font-weight: 600;
     font-size: 18;
-   
+    color: rgb(255, 255, 255);
 
   }
   

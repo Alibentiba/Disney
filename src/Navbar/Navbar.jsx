@@ -18,10 +18,10 @@ const Nvabar = () => {
 <nav className='navbar'>
     <a href="" className='brand'>brand</a>
         <ul className={active}>
-       <li className='nav-i'><a href="" className='nav-link'>Home</a></li> 
-       <li className='nav-i'><a href="" className='nav-link'>Produt</a></li> 
-       <li className='nav-i'><a href="" className='nav-link'>Navigation</a></li> 
-       <li className='nav-i'><a href="" className='nav-link'>deconcter</a></li> 
+       <li className='nav-i'><a href="" className='nav-Link'><img src={FaHome} alt="jj"/>Home</a></li> 
+       <li className='nav-i'><a href="" className='nav-Link'>Produt</a></li> 
+       <li className='nav-i'><a href="" className='nav-Link'>Navigation</a></li> 
+       <li className='nav-i'><a href="" className='nav-Link'>deconcter</a></li> 
         </ul>
       <div className={activetoglle} onClick={toggle}>
         <div className='line1'></div>

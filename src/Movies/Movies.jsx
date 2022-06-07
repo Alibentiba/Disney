@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Mov.css"
-import Caegory from '../Ctegory/Caegory'
+import Row from '../Row/Row'
 import {useSelector} from 'react-redux'
 const Movies = () => {
   const mov= useSelector(state=>state.userstore.movies)
@@ -12,15 +12,15 @@ const Movies = () => {
 
   return (
    <div className='Mov'>
-  <Caegory Cat={recommende}/>
-  <Caegory Cat={original}/>
-  <Caegory Cat={trending}/>
-  <Caegory Cat={original}/>
-  <Caegory Cat={recommende}/>
-  <Caegory Cat={original}/>
-  <Caegory Cat={trending}/>
-  <Caegory Cat={original}/>
-  <Caegory Cat={news}/>
+  <Row Cat={recommende}/>
+  <Row Cat={original}/>
+  <Row Cat={trending}/>
+  <Row Cat={original}/>
+  <Row Cat={recommende}/>
+  <Row Cat={original}/>
+  <Row Cat={trending}/>
+  <Row Cat={original}/>
+  <Row Cat={news}/>
     </div>)}
 
 export default Movies

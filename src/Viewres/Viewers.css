@@ -42,10 +42,9 @@ border-top: 1px solid rgb(255, 255, 255);
   width: 100%;
     height: 100%;
     position: absolute;
-    top: 0px;
+  top: 0%;
     opacity: 0;
     z-index: 0;
- 
 }
 
 
@@ -54,7 +53,63 @@ border-top: 1px solid rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
   rgb(0 0 0 / 72%) 0px 30px 22px -10px;
   transform: scale(1.05);
-  border-color: rgba(249, 249, 249, 0.8);
+  border-color: rgb(255, 225, 0);
 }
 
+
+.V1{
+grid-area: V1;
+}
+.V2{
+  grid-area: V2;
+  
+}
+.V3{
+  grid-area: V3;
+}
+.V4{
+  grid-area: V4; 
+}
+.V5{
+  grid-area: V5;
+}
+
+
+
+
+
+
+
+
+
 .Viewers-image video:hover{opacity:1;}
+@media only screen and (max-width: 500px) {
+
+  .Viewers{
+    display: grid;
+    
+    grid-template-rows: minmax(200px,auto);
+    grid-template-areas:
+    "V1 V1  V2 V2 V3 V3"
+    "V4 V4 V4  V5 V5 V5" 
+    ;
+
+  }
+ 
+
+  .Viewers-image{
+    border-radius: 10px;
+    box-shadow: rgb(255, 51, 0) 0px 26px 30px -10px,
+      rgba(255, 0, 0, 0.73) 0px 16px 10px -10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+    height: 100px;
+    padding: 0%;
+    
+  }
+
+
+}

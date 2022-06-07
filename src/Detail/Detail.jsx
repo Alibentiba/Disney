@@ -17,7 +17,6 @@ export const Detail = () => {
       </div>
       <div className='Container-detaiil'>
       
-    {/* const {backgroundImg,cardImg,description,id,subTitle,title,titleImg,type}=item; */}
   <img src={Detailsmov.titleImg} alt="" />
  
 <div className='buttons'>
