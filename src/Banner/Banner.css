@@ -1,14 +1,17 @@
-.Home{
+/* .Home{
     width: 100%;
     height:800px;
     background-color: black;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-}
+    justify-content: flex-start;
+    
+} */
 .Carousel{
+   
     color: black;
+    /* position: fixed; */
 }
 .car{
 width: 100%;

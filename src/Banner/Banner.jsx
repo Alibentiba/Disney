@@ -1,9 +1,8 @@
 import React from 'react'
-import './Home.css'
+import './Banner.css'
 import Carousel from 'react-bootstrap/Carousel'
-import banner from '../Home/banner.jpg'
-const Home = () => {
-
+import banner from '../Banner/banner.jpg'
+const Banner = () => {
   return (
     <Carousel fade={true} pause={false} className='Carousel'>
       <Carousel.Item interval={2000} className='car'>
@@ -40,7 +39,8 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
   )
 }
 
-export default Home
+export default Banner
