@@ -1,0 +1,31 @@
+.Row{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  /* overflow: hidden; */
+  overflow-y:hidden;
+  overflow-x:scroll;
+  gap: 10px;
+  scroll-behavior: smooth;
+
+}
+.Row img{
+  width: 200px;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 450ms;
+}
+/* .Row::-webkit-scrollbar{
+  display:none;
+} */
+.Row img:hover {
+  transform: scale(1.08);
+}
+@media only screen and (max-width: 500px) {
+
+  .Row img{
+      width: 390px;
+      height: 280px;
+      object-fit: contain; 
+  }
+}

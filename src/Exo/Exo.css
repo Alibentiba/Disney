@@ -1,111 +1,33 @@
-li {
-  list-style: none;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  text-transform: capitalize;
-
-}
-li:hover{
-  color: rgb(255, 51, 0);
-}
-a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ;
+    grid-auto-rows: minmax(20px,auto);
+    grid-template-areas: none
+    "div1 div1 div1 div1 div1"
+    "div2 div2 div3 div3 div3"
+    "div2 div2 div4 div4 div4"
+    "div5 div5 div5 div5 div6"
+    ;
 }
 
-.navbar{
-display: flex;
-align-items: center;
-justify-content:space-evenly;
-background-color: rgb(0, 0, 0);
-height: 8vh;
-width: 100%;
-z-index: 1000;
-position: fixed;
-border-bottom: solid 2px beige;
 
+
+.div1 {
+    grid-area: div1;
 }
-.brand{
-    text-transform: uppercase;
-    font-weight: bold;
-
+.div2 {
+    grid-area: div2;
 }
-.nav-menu{
-display: flex;
-align-items: center;
-justify-content: space-around;
-gap: 3rem;
-
+.div3{
+    grid-area: div3;
 }
-.nav__toggler div{
-    width: 2.5rem;
-    height: 0.2rem;
-    margin: 0.4rem;
-    background: rgb(204, 204, 204);
-    transition: 0.1s ease-in;
-    
-  }
-  
-  .nav__toggler{
-      display: none;
-      cursor: pointer;
-      margin-left: 5%;
-  }
-  @media only screen and (max-width: 500px) {
-
-    .nav__toggler{display: block;}
-
-  .navbar{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 50%;}
-
-
-    .nav-menu{
-    position: fixed;
-    top: 8%;
-    left: 0%;
-    width: 50%;
-    height:800px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    display: flex;
-    gap: 70px;
-    background-color: black;
-    transform: translateX(-100%);
-    z-index: 1000;
-    padding:50px 0 0%;
-    gap: 2.5%;
-    
-    }
-    li{
-      width: 100%;
-      height: 5%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: 0.5s;
-    }
-    li:hover{
-     background-color: aqua;
-    }
-
-    .nav-active{
-    transform: translateX(0%);
-    transition: 0.5s;
-    transition-delay: 0.3s;}
-  }
-  .toglle .line1{
-    transform: rotate(-45deg) translate(-4px,5px);
-  }
-
-  .toglle .line2{
-    opacity: 0;
-  }
-
-  .toglle .line3{
-    transform: rotate(45deg) translate(-4px,-5px);
-  }
+.div4 {
+    grid-area: div4;
+}
+.div5 {
+    grid-area: div5;
+}
+.div6 {
+    grid-area: div6;
+}
