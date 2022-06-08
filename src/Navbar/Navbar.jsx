@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import { FaHome,FaSearch,FaPlus,FaRegStar} from "react-icons/fa";
-import {RiMovie2Fill } from "react-icons/ri";
-import {BsDisplay } from "react-icons/bs";
-
-
+import { FaHome,FaSearch,FaPlus,FaStar } from "react-icons/fa";
+import {GiFilmSpool,GiAngryEyes} from "react-icons/gi";
+import {IoMdRadio} from "react-icons/io";
 const Nvabar = () => {
   const[active,setactive]=useState('nav-menu')
   const[activetoglle,setactivetoglle]=useState('nav__toggler')
@@ -16,17 +14,21 @@ const Nvabar = () => {
 
   return (
 <nav className='navbar'>
-    <a href="" className='brand'>brand</a>
+    <a href="" className='brand'><GiAngryEyes alt='Alt' className='Logo'/></a>
         <ul className={active}>
-       <li className='nav-i'><a href="" className='nav-Link'><img src={FaHome} alt="jj"/>Home</a></li> 
-       <li className='nav-i'><a href="" className='nav-Link'>Produt</a></li> 
-       <li className='nav-i'><a href="" className='nav-Link'>Navigation</a></li> 
-       <li className='nav-i'><a href="" className='nav-Link'>deconcter</a></li> 
+       <li><a href="#" className='nav-Link'><FaHome alt="fg"/>HOME</a></li> 
+       <li><a href="" className='nav-Link'><FaSearch alt="fg"/>SEARCH</a></li> 
+       <li><a href="" className='nav-Link'><FaPlus alt="fg"/>WATCHLIST</a></li> 
+       <li><a href="" className='nav-Link'><FaStar alt="fg"/>ORIGINALS</a></li> 
+       <li><a href="" className='nav-Link'><GiFilmSpool alt="fg"/>MOVIES</a></li> 
+       <li><a href="" className='nav-Link'><IoMdRadio alt="fg"/>SERIES</a></li>
+       
         </ul>
       <div className={activetoglle} onClick={toggle}>
         <div className='line1'></div>
         <div className='line2'></div>
         <div className='line3'></div>
+
       </div>
    </nav>
   )

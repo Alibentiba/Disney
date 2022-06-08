@@ -2,18 +2,28 @@ li {
     list-style: none;
     font-weight: 600;
     text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   
   }
-  li:hover{
-    color: rgb(255, 92, 51);
- }
+
   a {
     text-decoration: none;
     font-weight: 600;
     font-size: 18;
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 
   }
+   a:hover{
+    color: rgb(255, 92, 51);
+ }
   
   .navbar{
   display: flex;
@@ -27,17 +37,12 @@ li {
   border-bottom: solid 2px beige;
   
   }
-  .brand{
-      text-transform: uppercase;
-      font-weight: bold;
-  
-  }
+
   .nav-menu{
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
-  
   }
   .nav__toggler div{
       width: 2.5rem;
@@ -47,6 +52,13 @@ li {
       transition: 0.1s ease-in;
       
     }
+    .Logo{
+      width: 70px;
+      height: auto;
+      color: rgb(255, 7, 234);
+      /* border: solid 2px rgb(255, 255, 255); */
+      padding-top: 0;
+    }
     
     .nav__toggler{
         display: none;
@@ -55,7 +67,8 @@ li {
     }
     @media only screen and (max-width: 500px) {
   
-      .nav__toggler{display: block;}
+      .nav__toggler{display: block;
+   }
   
     .navbar{
     display: flex;
@@ -87,8 +100,10 @@ li {
         height: 5%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         transition: 0.5s;
+        text-indent: 5px;
+        padding-left: 10px;
       }
       li:hover{
        background-color: aqua;
