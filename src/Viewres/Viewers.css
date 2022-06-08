@@ -99,8 +99,6 @@ grid-area: V1;
 
   .Viewers-image{
     border-radius: 10px;
-    box-shadow: rgb(255, 51, 0) 0px 26px 30px -10px,
-      rgba(255, 0, 0, 0.73) 0px 16px 10px -10px;
     cursor: pointer;
     overflow: hidden;
     position: relative;

@@ -16,7 +16,7 @@ return (
 const {backgroundImg,cardImg,description,id,subTitle,title,titleImg,type}=item;
 return(
 <Carousel.Item interval={2000} className='car'>
-  <img className="d-block"src={cardImg} alt="First slide"/>
+  <img className="d-block"src={backgroundImg} alt="First slide"/>
   <Carousel.Caption>
     <h3></h3>
     <p></p>

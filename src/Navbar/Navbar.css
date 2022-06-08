@@ -74,7 +74,8 @@ li {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    gap: 50%;}
+    gap: 50%;
+  }
   
   
       .nav-menu{
@@ -112,7 +113,8 @@ li {
       .nav-active{
       transform: translateX(0%);
       transition: 0.5s;
-      transition-delay: 0.3s;}
+      transition-delay: 0.3s;
+      height: 100%;}
     }
     .toglle .line1{
       transform: rotate(-45deg) translate(-4px,5px);
