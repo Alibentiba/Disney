@@ -9,19 +9,18 @@ export const Detail = () => {
   const Detailsmov= useSelector(state=>state.userstore.Detaill)
   return (
     <div className='Container'>
-          <Navbar/>
 
-      <div className='Container-image' style={{backgroundImage: `url(`+ Detailsmov.backgroundImg +`)`  }}>
+  <div className='Container-image' style={{backgroundImage: `url(`+ Detailsmov.backgroundImg +`)`  }}>
 
-      <div className='Container-detaiil'>
+      <div className='Container-details'>
       
-  <img src={Detailsmov.titleImg} alt="" />
+     <img src={Detailsmov.titleImg} alt="" />
  
-    <div className='buttons'>
-        <button className='button1'><FaPlay/><span>PLAY</span> </button>
-        <button className='button1 traille'><FaPlay/><span>TRAILER</span> </button>
-        <button className='button2'>+</button>
-        <button className='button2'><RiGroup2Fill /></button>
+    <div className='buttons-details'>
+        <button className='b1'><FaPlay/><span>PLAY</span> </button>
+        <button className='b2'><FaPlay/><span>TRAILER</span> </button>
+        <button className='b3'>+</button>
+        <button className='b4'><RiGroup2Fill /></button>
     
     </div>
     <div className='subtitle'>

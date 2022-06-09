@@ -9,9 +9,7 @@ const Row = ({Cat}) => {
 const dispatch =useDispatch()
 
   return (
-<div className="row">
-<h2>car1</h2>
-<div className="row_posters">
+<div className="rowmov">
   {Cat.map((item,index) => {
      const {backgroundImg,cardImg,description,id,subTitle,title,titleImg,type}=item;
     return (
@@ -20,7 +18,7 @@ const dispatch =useDispatch()
      </Link> 
     );
   })}
-</div>
+
 </div>
 
   )}

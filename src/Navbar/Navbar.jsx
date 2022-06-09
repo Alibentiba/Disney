@@ -22,7 +22,6 @@ const Nvabar = () => {
        <li><a href="" className='nav-Link'><FaStar alt="fg"/>ORIGINALS</a></li> 
        <li><a href="" className='nav-Link'><GiFilmSpool alt="fg"/>MOVIES</a></li> 
        <li><a href="" className='nav-Link'><IoMdRadio alt="fg"/>SERIES</a></li>
-       
         </ul>
       <div className={activetoglle} onClick={toggle}>
         <div className='line1'></div>
