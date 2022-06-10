@@ -12,14 +12,27 @@ const Movies = () => {
 
   return (
    <div className='Mov'>
+     <span>recommende</span>
   <Row Cat={recommende}/>
+  <span>original</span>
+
   <Row Cat={original}/>
+  <span>trending</span>
+
   <Row Cat={trending}/>
+  <span>original</span>
+
   <Row Cat={original}/>
+  <span>recommende</span>
+
   <Row Cat={recommende}/>
-  <Row Cat={original}/>
+ 
+  <span>trending</span>
+
   <Row Cat={trending}/>
-  <Row Cat={original}/>
+
+  <span>news</span>
+
   <Row Cat={news}/>
     </div>)}
 

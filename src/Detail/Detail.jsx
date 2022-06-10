@@ -9,12 +9,13 @@ export const Detail = () => {
   const Detailsmov= useSelector(state=>state.userstore.Detaill)
   return (
     <div className='Container'>
-
-  <div className='Container-image' style={{backgroundImage: `url(`+ Detailsmov.backgroundImg +`)`  }}>
+  <div className='Container-image'>
+    <img className='Container-img' src={Detailsmov.backgroundImg} alt="jjjf" />
+  {/* style={{backgroundImage: `url(`+ Detailsmov.backgroundImg +`)`  }} */}
 
       <div className='Container-details'>
       
-     <img src={Detailsmov.titleImg} alt="" />
+     <img className='Container-detailsimg'  src={Detailsmov.titleImg} alt="" />
  
     <div className='buttons-details'>
         <button className='b1'><FaPlay/><span>PLAY</span> </button>
@@ -24,8 +25,8 @@ export const Detail = () => {
     
     </div>
     <div className='subtitle'>
-     <p>{Detailsmov.subTitle}</p>
-     <p>{Detailsmov.description}</p>
+     <p className='p1'>{Detailsmov.subTitle}</p>
+     <p className='p2'>{Detailsmov.description}</p>
     </div>
     
           </div>

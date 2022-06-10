@@ -1,3 +1,4 @@
+
 li {
     list-style: none;
     font-weight: 600;
@@ -37,12 +38,18 @@ li {
   border-bottom: solid 2px beige;
   
   }
-
+.brand{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
   .nav-menu{
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
+  height: 100%;
   }
   .nav__toggler div{
       width: 2.5rem;
@@ -52,13 +59,7 @@ li {
       transition: 0.1s ease-in;
       
     }
-    .Logo{
-      width: 70px;
-      height: auto;
-      color: rgb(255, 7, 234);
-      /* border: solid 2px rgb(255, 255, 255); */
-      padding-top: 0;
-    }
+  
     
     .nav__toggler{
         display: none;

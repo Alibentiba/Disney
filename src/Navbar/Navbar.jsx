@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { FaHome,FaSearch,FaPlus,FaStar } from "react-icons/fa";
-import {GiFilmSpool,GiAngryEyes} from "react-icons/gi";
+import {GiFilmSpool} from "react-icons/gi";
 import {IoMdRadio} from "react-icons/io";
 const Nvabar = () => {
   const[active,setactive]=useState('nav-menu')
@@ -14,7 +14,10 @@ const Nvabar = () => {
 
   return (
 <nav className='navbar'>
-    <a href="" className='brand'><GiAngryEyes alt='Alt' className='Logo'/></a>
+  <div className='brand'>
+  <a href="" >MOVIES</a>
+  </div>
+    
         <ul className={active}>
        <li><a href="#" className='nav-Link'><FaHome alt="fg"/>HOME</a></li> 
        <li><a href="" className='nav-Link'><FaSearch alt="fg"/>SEARCH</a></li> 

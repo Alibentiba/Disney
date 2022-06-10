@@ -7,29 +7,34 @@ height:800px;
 position: relative;
 overflow-x: hidden;
 }
-.Container-image {
+.Container-image  {
     margin-left: 0px;
+    width: 100%;
+    height: 100%; 
+}
+
+.Container-img{
     position: fixed;
     z-index: -1;
     width: 100%;
     height: 100%;
-    border: solid 2px blueviolet;
-    /* height: 100%; */
+  
 }
-.Container-details img{
-    width: 90%;
+.Container-detailsimg{
+    width: 50%;
     height: 35%;
-    margin-top: 15%;
+    /* margin-top: 15%; */
     object-fit: contain;
-    border: solid 2px brown;
+    /* border: solid 2px brown; */
+    margin-top: 0;
 
 }
 .Container-details{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     /* border:  solid 3px beige; */
     height: 90%;
 
@@ -72,29 +77,75 @@ overflow-x: hidden;
 .subtitle{
     color: rgb(255, 255, 255);
     font-size: medium;
- border:  solid 3px beige;
+ /* border:  solid 3px beige; */
 width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 500px) {
+    .buttons-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    height: auto;
+    gap: 1%;
+        padding-left: 10px;    /* border:  solid 3px beige; */
 
+    }
+    .b1,.b2{
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
 
-    .Container-detaiil{
+}
+.b3,.b4 {
+    width:45px;
+    height: 45px;
+    border-radius: 100%;}
+
+    .Container-details{
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* border:  solid 3px beige; */
+        align-items: flex-start;
+        justify-content:center;
         height: 90%;
     }
-.Container-image{
+    .Container-image {
+        margin-left: 0px;
+        position:fixed;
+        width: 100%;
+        height: 100%; 
+    }
+
+.Container-img{
+    z-index: -1;
+    margin-left: 0px;
     width: 100%;
     height: 100%;
+    /* object-fit:cover; */
 }
-
-.Container-image img{
-    zoom: -50%;
+.subtitle{padding-left: 10px;}
+.p1{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
+.p2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
 }
