@@ -25,11 +25,21 @@ li {
    a:hover{
     color: rgb(255, 92, 51);
  }
-  
+  .Login{
+    color: aliceblue;
+    border-color: azure;
+    margin-right: 10px;
+    width: 7%;
+    
+  }
+  .Login:hover{
+    color: black;
+    background-color: aliceblue;
+  }
   .navbar{
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content:space-between;
   background-color: rgb(0, 0, 0);
   height: 8vh;
   width: 100%;
@@ -42,7 +52,15 @@ li {
 display: flex;
 align-items: center;
 justify-content: center;
-height: 100%;
+height: 150%;
+margin-top: -19px;
+    /* border: solid 2px blanchedalmond; */
+    width: 10%;
+}
+.brand img{
+  display: flex;
+  width: 60%;
+  height: auto;
 }
   .nav-menu{
   display: flex;
@@ -66,19 +84,111 @@ height: 100%;
         cursor: pointer;
         margin-left: 5%;
     }
+
+    .UserImg{height: 100%;
+      border-radius: 50%;
+      width: 48px;
+      object-fit: contain;
+     }
+    
+  .DropDown{ 
+    
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+    padding: 0px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100px;
+    opacity: 0;
+    height: 30px;
+ }
+   
+ 
+  
+ .SignOut {
+  height: 50px;
+  width:250px;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+   
+   
+  .DropDown:hover {
+     
+        opacity: 1;
+        transition-duration: 1s;
+      }
+    
+  
+
+
+
+
+
+
     @media only screen and (max-width: 500px) {
   
       .nav__toggler{display: block;
    }
-  
+   .brand{
+        width: 30%;
+    }
     .navbar{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 50%;
+    justify-content:space-between;
+    /* gap: 50%; */
   }
+  .SignOut:nth-child(7){
+    order:-1;
+  }
+  .UserImg{
+    height: auto;
+    border-radius: 50%;
+    width: 30%;
+    object-fit: contain;
+   }
+  .DropDown{ 
+    
+    background: transparent;
+    border:none;
+    /* border-radius: 4px; */
+    box-shadow: rgba(224, 222, 222, 0.5) 0px 0px 18px 0px;
+    padding: 0px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100%;
+    opacity: 1;
+    height: 30px;
+    color: antiquewhite;
+
+ }
+ .Login{
+  color: aliceblue;
+  border-color: azure;
+  margin-left: 10px;
+  width:25%;
   
-  
+}
+  .SignOut{
+    
+    width: 100%;
+    height:18%;
+  margin-top: 0;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+  }
       .nav-menu{
       position: fixed;
       top: 8%;
@@ -93,7 +203,7 @@ height: 100%;
       background-color: black;
       transform: translateX(-100%);
       z-index: 1000;
-      padding:50px 0 0%;
+      padding:5px 0 0%;
       gap: 2.5%;
       
       }

@@ -1,7 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 export const Slice = createSlice({
     name: "counter",
-    initialState: {movies:[],recommend:[],trending:[],original:[],news:[],Detaill:[]},
+    initialState: {movies:[],recommend:[],trending:[],original:[],news:[],Detaill:[],userinfo:{
+        name: "",
+        email: "",
+        photo: "",
+      }},
     reducers: {
         
         addmovies: (state, action) => {
@@ -21,9 +25,20 @@ export const Slice = createSlice({
         },
         addDetaill: (state, action) => {
             state.Detaill=action.payload
-        }
+        },
+        setUserLoginDetails: (state, action) => {
+            state.userinfo.name = action.payload.name;
+            state.userinfo.email = action.payload.email;
+            state.userinfo.photo = action.payload.photo;
+          },
+      
+          setSignOutState: (state) => {
+            state.userinfo.name = null;
+            state.userinfo.email = null;
+            state.userinfo.photo = null;
+          }
 
     }
 })
-export const { addmovies,addrecommend,addtrending, addoriginal, addnews,addDetaill} = Slice.actions
+export const { addmovies,addrecommend,addtrending, addoriginal, addnews,addDetaill,setUserLoginDetails,setSignOutState} = Slice.actions
 export default Slice.reducer
