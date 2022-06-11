@@ -2,7 +2,7 @@ import React, { useState,useEffect} from 'react'
 import './Navbar.css'
 import {signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../firebaseConfig";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getAuth} from "firebase/auth";
 import { useNavigate  } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {setUserLoginDetails,setSignOutState} from '../Slice'

@@ -1,9 +1,8 @@
 import React from 'react'
 import "./Detail.css"
-import { FaPlay,FaPlusCircle } from "react-icons/fa";
+import { FaPlay} from "react-icons/fa";
 import {RiGroup2Fill } from "react-icons/ri";
 import { useSelector } from 'react-redux';
-import Navbar from '../Navbar/Navbar'
 export const Detail = () => {
 
   const Detailsmov= useSelector(state=>state.userstore.Detaill)

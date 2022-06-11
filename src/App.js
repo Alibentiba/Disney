@@ -4,13 +4,11 @@ import Home from "./Home/Home.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter as Router,Routes , Route } from "react-router-dom";
-// import { collection } from "firebase/firestore"; 
 import { collection, getDocs } from "firebase/firestore"; 
 import React ,{useEffect} from 'react'
 
 import db from "./firebaseConfig";
 import { addmovies,addrecommend,addtrending, addoriginal, addnews } from './Slice'
-// import { collection,getDocs,getFirestore } from "firebase/firestore";
 import { useDispatch } from 'react-redux'
 import { Detail } from './Detail/Detail';
 import Login from './Login/Login';
