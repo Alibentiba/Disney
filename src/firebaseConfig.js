@@ -9,15 +9,14 @@ import "firebase/auth"
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAhr8zQq7RPvvz6lrFtvNAe6NV5QTeUJfM",
-    authDomain: "ecom-5267d.firebaseapp.com",
-    projectId: "ecom-5267d",
-    storageBucket: "ecom-5267d.appspot.com",
-    messagingSenderId: "564032441617",
-    appId: "1:564032441617:web:ea1d3afac2ad72dc82d0b0",
-    measurementId: "G-C78V4S4BK6"
-    
-  };
+  apiKey: "AIzaSyC2a8wDHt4TS6evL6OVo45cKB65ofxuSEg",
+  authDomain: "diseny-973a3.firebaseapp.com",
+  projectId: "diseny-973a3",
+  storageBucket: "diseny-973a3.appspot.com",
+  messagingSenderId: "726488443563",
+  appId: "1:726488443563:web:7515fd7de681d5a27ca5ee",
+  measurementId: "G-20SHN5HMEL"
+};
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   const storage = getStorage(app)
